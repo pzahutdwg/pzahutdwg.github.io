@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"battlerName":"Actor1_7","characterIndex":6,"characterName":"Actor1","classId":1,"equips":[2,27,0,5,0],"faceIndex":6,"faceName":"Actor1","traits":[],"initialLevel":5,"maxLevel":99,"name":"Eliot","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"","characterIndex":0,"characterName":"Nature_chara_MV","classId":5,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Nature_faces_MV","traits":[{"code":43,"dataId":13,"value":1},{"code":43,"dataId":14,"value":1},{"code":43,"dataId":20,"value":1}],"initialLevel":10,"maxLevel":99,"name":"Butter Dog","nickname":"B-Dawg","note":"","profile":""}
+]
