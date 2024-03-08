@@ -5,20 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome website</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="styleSheet" href="css/light.css" id="lightMode">
+    <link rel="stylesheet" href="css/dark.css" id="darkMode" media="none">
 </head>
 
 <body>
     <div id="content">
-        <div class="post">
-
-            <h1 id="title" style="display:inline">Click the image to play the game.</h1>
-            <a href="gettoschool5/index.html" target="_blank">
-                <img src="img/gamescreen.png" alt="Get to school 5" class="left">
-            </a>
+        <div id="top">
+            <nav>
+                <a href="gameGuide.html">Gallery</a>
+                <a href="boss.html">Shrek</a>
+                <a href="#" onclick="changeSheet()" id="colorSwitch">Enable Dark Mode</a>
+            </nav>
         </div>
-        <a href="gameGuide.html" target="_blank">Game guide</a>
+        <div class="post">
+            <img src="img/gamescreen.png" alt="Get to school 5" class="left">
+            <h1 id="title" style="display:inline;">Click the image to play the game.</h1>
+            <br>
+            <a href="#" id="rainbow" onclick="rainbow()">Rainbow!</a>
+        </div>
     </div>
 </body>
+<script src="js/colorMode.js"></script>
+
+<script>
+
+    const rainbowText = document.getElementById("rainbow");
+    let r = 1;
+    let g = 1;
+    let b = 1;
+
+    function rainbow() {
+
+        let r = Math.random() * 255;
+        let g = Math.random() * 255;
+        let b = Math.random() * 255;
+
+        rainbowText.style = "color: rgb(" + r + ", " + g + ", " + b + ")";
+    }
+</script>
 
 </html>

@@ -1,0 +1,60 @@
+.post .left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post img {
+    width: 700px;
+    height: fit-content;
+    border: solid 3px black;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
+
+}
+
+.gallery img {
+    height: 200px;
+    width: fit-content;
+    transition: all 0.5s ease 0.25s;
+
+}
+
+.gallery img:hover {
+    height: 450px;
+    width: fit-content;
+}
+
+body {
+    background-color: bisque;
+}
+
+#top {
+    border: solid 2px black;
+}
+
+.post {
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+nav a {
+    border: solid 1px black;
+    padding: 5px;
+    margin: 0;
+}
+
+#content {
+    border: solid 5px black;
+}
+
+* {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

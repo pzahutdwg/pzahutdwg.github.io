@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery</title>
+    <link rel="styleSheet" href="css/light.css" id="lightMode">
+    <link rel="stylesheet" href="css/dark.css" id="darkMode" media="none">
 </head>
 
 <body>
     <div id="blogposts">
-        <div class="post">
-
-            <h1>Play my game.</h1>
-            <p> click <a href="gettoschool5/index.html">here</a> to play.</p>
-        </div>
-        <div class="post">
-            <h2>Gallery</h2>
-            <div class="gallery">
+        <nav class="post">
+            <a href="index.html">Home</a>
+            <a href="#" onclick="changeSheet()" id="colorSwitch">Enable Dark Mode</a>
+        </nav>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="post">
                 <a href="img/ss2.png"> <img src="img/ss2.png"> </a>
                 <a href="img/ss3.png"> <img src="img/ss3.png"> </a>
                 <a href="img/ss4.png"> <img src="img/ss4.png"> </a>
@@ -29,5 +29,6 @@
 
     </div>
 </body>
+<script src="js/colorMode.js"></script>
 
 </html>
