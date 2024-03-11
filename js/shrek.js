@@ -52,11 +52,6 @@ function attack() {
         makeHP();
     } else {
         alert("Have mercy, you monster!");
-        const linkSpot = document.getElementById("homePage");
-        let link = document.createElement("a")
-        link.href = "index.html"
-        link.innerText = "Home Page"
-        linkSpot.appendChild(link)
     }
     console.log(bossHpCurrent)
 }

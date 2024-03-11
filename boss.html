@@ -5,16 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrek!</title>
-    <link rel="styleSheet" href="css/dark.css" id="colorSheet">
+    <link rel="styleSheet" href="css/light.css" id="lightMode">
+    <link rel="stylesheet" href="css/dark.css" id="darkMode" media="none">
 </head>
 
 <body>
-    <div id="gameContainer">
-        <div id="bossHP"></div>
-        <div id="homePage"></div>
-        <img id="bossGFX" src="img/bossMonster.png" style="height: 500px;">
-        <div id="playerUI">
-            <img src="img/sword.png" id="sword" onclick="attack()" style="border: solid 5px black; padding: 5px;">
+    <div id="content">
+
+        <nav>
+            <a href="gameGuide.html">Gallery</a>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="#" onclick="changeSheet()" id="colorSwitch">Enable Dark Mode</a>
+        </nav>
+        <div id="gameContainer">
+            <div id="bossHP"></div>
+            <div id="homePage"></div>
+            <img id="bossGFX" src="img/bossMonster.png" style="height: 500px;">
+            <div id="playerUI">
+                <img src="img/sword.png" id="sword" onclick="attack()" style="border: solid 5px black; padding: 5px;">
+            </div>
         </div>
     </div>
 </body>
