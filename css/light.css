@@ -45,7 +45,6 @@ body {
 .post {
     border: solid 2px black;
     overflow: hidden;
-    padding: 5px;
 }
 
 nav a {

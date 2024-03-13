@@ -1,5 +1,7 @@
 const page = document.getElementById("content");
-page.style.opacity = '1';
+setTimeout(() => {
+    page.style.opacity = '1';
+}, 1000);
 
 function switchToPage(pageName) {
     page.style.opacity = '0';
