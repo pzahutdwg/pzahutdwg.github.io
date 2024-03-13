@@ -14,10 +14,10 @@
     <div id="content">
         <div id="top">
             <nav>
-                <a href="gameGuide.html">Gallery</a>
-                <a href="boss.html">Shrek</a>
-                <a href="aboutMe.html">About Me</a>
-                <a href="#" onclick="changeSheet()" id="colorSwitch">Enable Dark Mode</a>
+                <a href="#" onclick="switchToPage('gameGuide.html')">Gallery</a>
+                <a href="#" onclick="switchToPage('boss.html')">Shrek</a>
+                <a href="#" onclick="switchToPage('aboutMe.html')">About Me</a>
+                <a href="#" onclick="changeSheet(); setCookie('lightMode', lightMode, 1)" id="colorSwitch">Enable Dark Mode</a>
             </nav>
         </div>
         <div class="post">
@@ -44,5 +44,20 @@
     </div>
 </body>
 <script src="js/colorMode.js"></script>
-
+<script src="js/switchPages.js"></script>
+<script src="js/cookies.js"></script>
+<script>
+    console.log(getCookie('lightMode'))
+    let lightMode = getCookie('lightMode');
+    console.log(lightMode)
+    if (lightMode == 'false') {
+        console.log("Dark mode is on.");
+        darkSheet.media = "";
+        colorSwitch.innerText = "Enable Light Mode";
+    } else {
+        console.log("Light mode is on.");
+        darkSheet.media = "none";
+        colorSwitch.innerText = "Enable Dark Mode";
+    }
+</script>
 </html>

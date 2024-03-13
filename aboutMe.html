@@ -13,10 +13,10 @@
     <div id="content">
 
         <nav>
-            <a href="gameGuide.html">Gallery</a>
-            <a href="boss.html">Shrek</a>
-            <a href="index.html">Home</a>
-            <a href="#" onclick="changeSheet()" id="colorSwitch">Enable Dark Mode</a>
+            <a href="#" onclick="switchToPage('gameGuide.html')">Gallery</a>
+            <a href="#" onclick="switchToPage('boss.html')">Shrek</a>
+            <a href="#" onclick="switchToPage('index.html')">Home</a>
+            <a href="#" onclick="changeSheet(); setCookie('lightMode', lightMode, 1)" id="colorSwitch">Enable Dark Mode</a>
         </nav>
         <div id="blogposts">
             <div class="post">
@@ -34,7 +34,7 @@
                     and I dont like country very much. Even though I odn't like country music, I love to be in the
                     country. it is so calming!
                 </p>
-                <p>The picture to the right is Letchworth State Park in New York. It is in my opionion, one of the msot
+                <p>The picture to the right is Letchworth State Park in New York. It is in my opionion, one of the most
                     stunning places ever!</p>
             </div>
         </div>
@@ -42,5 +42,24 @@
 </body>
 
 <script src="js/colorMode.js"></script>
-
+<script src="js/switchPages.js"></script>
+<script src="js/cookies.js"></script>
+<script>
+    console.log(getCookie('lightMode'))
+    let lightMode = getCookie('lightMode');
+    console.log(lightMode)
+    if (lightMode == 'false') {
+        console.log("Dark mode is on.");
+        darkSheet.media = "";
+        colorSwitch.innerText = "Enable Light Mode";
+    } else if (lightMode == 'true'){
+        console.log("Light mode is on.");
+        darkSheet.media = "none";
+        colorSwitch.innerText = "Enable Dark Mode";
+    } else {
+        console.log("Light mode is on.");
+        darkSheet.media = "none";
+        colorSwitch.innerText = "Enable Dark Mode";
+    }
+</script>
 </html>

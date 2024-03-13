@@ -1,4 +1,3 @@
-let lightMode = true;
 const darkSheet = document.getElementById("darkMode");
 const colorSwitch = document.getElementById("colorSwitch");
 
